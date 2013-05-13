@@ -1,5 +1,5 @@
 NAME
-    Data::FuzzyHash - Binding of libfuzzy
+    Data::FuzzyHash - Perl binding of libfuzzy(ssdeep)
 
 SYNOPSIS
       use strict;

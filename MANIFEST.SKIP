@@ -87,9 +87,9 @@ MYMETA\.
 ^MYMETA\.
 #!end included /Users/hide/perl5/perlbrew/perls/5.16d/lib/5.16.3/ExtUtils/MANIFEST.SKIP
 
-^lib/Data/*.c
-^lib/Data/*.xs
-^lib/Data/*.o
-^lib/Data/*.h
+^lib/Data/.+\.c
+^lib/Data/.+\.xs
+^lib/Data/.+\.o
+^lib/Data/.+\.h
 ^lib/Data/typemap
 

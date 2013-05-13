@@ -1,12 +1,12 @@
 Build.PL
 Changes
 cpanfile
-lib/Data/FuzzyHash.c
-lib/Data/FuzzyHash.o
 lib/Data/FuzzyHash.pm
-lib/Data/FuzzyHash.xs
-lib/Data/ppport.h
+LICENSE
 MANIFEST
+META.json
+META.yml
+README
 t/00_compile.t
 t/01_basic.t
 xs/FuzzyHash.xs
@@ -15,7 +15,3 @@ xt/02_perlcritic.t
 xt/03_pod.t
 xt/04_pod_coverage.t
 xt/perlcriticrc
-README
-LICENSE
-META.yml
-META.json
