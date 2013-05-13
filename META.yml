@@ -32,6 +32,10 @@ no_index:
     - xt
     - inc
     - eg
+provides:
+  Data::FuzzyHash:
+    file: lib/Data/FuzzyHash.pm
+    version: 0.01
 requires:
   XSLoader: 0.02
   perl: 5.008008
