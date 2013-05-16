@@ -9,3 +9,4 @@ Hideaki Ohno
 hide.o.j55 {at} gmail.com
 Data::FuzzyHash
 libfuzzy
+ssdeep

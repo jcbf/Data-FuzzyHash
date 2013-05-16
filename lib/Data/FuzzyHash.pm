@@ -25,7 +25,7 @@ __END__
 
 =head1 NAME
 
-Data::FuzzyHash - Perl binding of libfuzzy(ssdeep)
+Data::FuzzyHash - Perl binding of libfuzzy (ssdeep)
 
 =head1 SYNOPSIS
 
