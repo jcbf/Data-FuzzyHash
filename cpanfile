@@ -5,7 +5,7 @@ on 'configure' => sub {
     requires 'Module::Build::Pluggable';
     requires 'Module::Build::Pluggable::GithubMeta';
     requires 'Module::Build::Pluggable::CPANfile';
-    requires 'Module::Build::Pluggable::XSUtil';
+    requires 'Module::Build::Pluggable::XSUtil' => '1.02';
 };
 
 on 'build' => sub {
