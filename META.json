@@ -31,10 +31,7 @@
             "CPAN::Meta" : "0",
             "CPAN::Meta::Prereqs" : "0",
             "Module::Build" : "0.38",
-            "Module::Build::Pluggable" : "0",
-            "Module::Build::Pluggable::CPANfile" : "0",
-            "Module::Build::Pluggable::GithubMeta" : "0",
-            "Module::Build::Pluggable::XSUtil" : "1.02"
+            "Module::Build::XSUtil" : "0"
          }
       },
       "develop" : {
