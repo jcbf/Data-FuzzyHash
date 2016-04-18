@@ -17,7 +17,7 @@ CODE:
     size_t size;
     const char *str = SvPVbyte(sv, size);
 
-    int status = fuzzy_hash_buf(str, size, result);
+    int status = fuzzy_hash_buf((const unsigned char *)str, size, result);
     if( status != 0 ){
         croak("Failed to calculate hash value.");
     }
