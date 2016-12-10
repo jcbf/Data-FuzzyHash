@@ -22,8 +22,8 @@ install:
 
 script:
    - perl ./Build.PL
-   - if [[ "$COVERAGE" == "1" ]]; then ./Build testcover "--extra_compiler_flags=-O0 -coverage" "--extra_linker_flags=-coverage -lfuzzy" ; else ./Build test ; fi
+   - if [ "$COVERAGE" == "1" ]; then ./Build testcover "--extra_compiler_flags=-O0 -coverage" "--extra_linker_flags=-coverage -lfuzzy" ; else ./Build test ; fi
 
 after_success:
-  - if [[ "$COVERAGE" == "1" ]]; then cover -report coveralls ; fi 
+  - cover -report coveralls
 
