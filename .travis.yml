@@ -4,7 +4,7 @@ language: perl
 matrix:
   include:
       - perl: "5.20"
-      env: COVERAGE=1 COVERAGE_OPTS='-ignore_re /CORE/\w+\.h$'
+      - env: COVERAGE=1 COVERAGE_OPTS='-ignore_re /CORE/\w+\.h$'
       - perl: "5.20"
 
 before_install:
