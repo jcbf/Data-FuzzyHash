@@ -21,8 +21,6 @@ install:
    - cpanm --quiet --notest --installdeps .
 
 script:
-   - cover -delete
-   - cover -test
-   - cover
+   - ./Build testcover
 after_success:
   - cover -report coveralls
