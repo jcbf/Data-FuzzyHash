@@ -10,11 +10,14 @@ MODULE = Data::FuzzyHash PACKAGE = Data::FuzzyHash
 PROTOTYPES: DISABLE
 
 SV*
-fuzzy_hash(const char* str)
+fuzzy_hash(SV *string )
 CODE:
 {
     char result[FUZZY_MAX_RESULT];
-    int status = fuzzy_hash_buf((const unsigned char*)str, strlen(str), result);
+		STRLEN len;
+    char *str = SvPV( string, len );
+
+    int status = fuzzy_hash_buf((const unsigned char *)str, len, result);
     if( status != 0 ){
         croak("Failed to calculate hash value.");
     }
