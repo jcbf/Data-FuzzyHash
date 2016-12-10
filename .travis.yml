@@ -20,7 +20,6 @@ install:
    - cpanm --quiet --notest Test::Perl::Critic Test::Fatal Test::Pod::Coverage
    - cpanm --quiet --notest --installdeps .
 
-script:
-   - ./Build testcover
+
 after_success:
   - cover -report coveralls
