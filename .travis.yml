@@ -20,6 +20,10 @@ install:
    - cpanm --quiet --notest Test::Perl::Critic Test::Fatal Test::Pod::Coverage
    - cpanm --quiet --notest --installdeps .
 
+script:
+   - perl ./Build.PL
+   - if [[ "COVERAGE" == "1" ]]; then ./Build testcover "--extra_compiler_flags=-O0 -coverage" "--extra_linker_flags=-coverage -lfuzzy" ; else ./Build test ; fi
 
 after_success:
-  - cover -report coveralls
+  - if [[ "COVERAGE" == "1" ]]; then cover -report coveralls ; fi 
+
